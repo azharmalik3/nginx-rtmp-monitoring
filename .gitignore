@@ -1,1 +1,4 @@
 /.idea/
+
+#skip modules
+/node_modules
