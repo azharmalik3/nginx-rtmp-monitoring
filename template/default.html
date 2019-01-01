@@ -107,9 +107,10 @@
                     <th class="text-center"><i class='glyphicon glyphicon-circle-arrow-up' style='color: #73afff;'></i> {{language.out_bytes}}</th>
                     <th class="text-center"><i class='glyphicon glyphicon-circle-arrow-down' style='color: #73afff;'></i> {{language.in_bits}}</th>
                     <th class="text-center"><i class='glyphicon glyphicon-circle-arrow-up' style='color: #73afff;'></i> {{language.out_bits}}</th>
-                    <th class="text-center"><i class='glyphicon glyphicon-user' style='color: #73afff;'></i> {{language.viewers}} </th>
+                    <th class="text-center"><i class='glyphicon glyphicon-user' style='color: #73afff;'></i> {{language.rtmp}} </th>
+                    <th class="text-center"><i class='glyphicon glyphicon-user' style='color: #73afff;'></i> {{language.hls}} </th>
                     <th class="text-center"><i class='glyphicon glyphicon-time' style='color: #73afff;'></i> {{language.time}}</th>
-                    <th class="text-center"><i class='glyphicon glyphicon-time' style='color: #73afff;'></i> {{language.play}}</th>
+		    <!-- <th class="text-center"><i class='glyphicon glyphicon-time' style='color: #73afff;'></i> {{language.play}}</th> -->
                     <th class="text-center"><i class='glyphicon glyphicon-time' style='color: #73afff;'></i> {{language.drop}}</th>
                 </tr>
                 </thead>
@@ -136,6 +137,7 @@
 <input type="hidden" value="{{stream_server}}" id="stream_server">
 <input type="hidden" value="{{language.drop}}" id="language_drop">
 <input type="hidden" value="{{control_server}}" id="control_server">
+<input type="hidden" value="" id="camera_exids">
 
 <div id="stream_drop_popup" class="modal fade" role="dialog">
   <div class="modal-dialog modal-sm">
@@ -173,6 +175,7 @@
 </div>
 
 <script src="js/jquery.js"></script>
+<script src="js/base64.js"></script>
 <script src="js/library/numeral.js"></script>
 <script src="js/library/player.min.js"></script>
 <script src="js/bootstrap.js"></script>
