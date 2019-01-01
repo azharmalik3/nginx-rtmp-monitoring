@@ -6,7 +6,7 @@ var parseString = require('xml2js').parseString;
 var config = require('./config.json');
 var language = require('./language/'+config.language+'.json');
 var app = express();
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public/'));
 app.use(bodyParser.urlencoded({extended: false}));
 var server = app.listen(config.http_server_port);
 var io = require('socket.io').listen(server);
